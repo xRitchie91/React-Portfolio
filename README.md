@@ -22,8 +22,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Contributors
 - [Ritchie Ortiz](https://www.github.com/xRitchie91)
-- [Lacey Griffith](https://github.com/lacey-griffith)
-- [Emily Pozzi](https://github.com/emilyepozzi)
+- [Peter Martinez](https://www.github.com/Pmarti53)
+- [Lacey Griffith](https://www.github.com/lacey-griffith)
+- [Emily Pozzi](https://www.github.com/emilyepozzi)
 
 ## Questions
 [Ask Away](https://www.github.com/xRitchie91)
