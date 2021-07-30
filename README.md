@@ -19,6 +19,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 [React Portfolio](https://xritchie91.github.io/React-Portfolio/)
 
 ## Screenshots
+- ![screenshot 1](https://user-images.githubusercontent.com/74946954/127598665-c3ed1c6c-e2ef-42ec-a4e2-de89ec09c5af.png)
+- ![screenshot 2](https://user-images.githubusercontent.com/74946954/127598634-8ebf2c28-7001-4461-a5f7-232733bbaa0c.png)
+- ![screenshot 3](https://user-images.githubusercontent.com/74946954/127598579-79362449-dcf4-4488-b121-a01147b76011.png)
 
 ## Contributors
 - [Ritchie Ortiz](https://www.github.com/xRitchie91)
