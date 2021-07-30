@@ -1,3 +1,4 @@
+// import those files so react plays nice! Cause if you don't...
 import React, { useState } from 'react';
 import Nav from './components/nav';
 import About from './components/about';
@@ -5,7 +6,7 @@ import Footer from './components/footer';
 import Project from './components/project';
 import ContactForm from './components/contact';
 
-
+// app functions so it can play nice! seeing a trend here, eh?
 function App() {
   const [categories] = useState([
     { name: "Projects", description: "web development projects" },
