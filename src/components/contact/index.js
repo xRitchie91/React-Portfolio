@@ -1,103 +1,61 @@
-import React, {useState} from 'react';
-import { validEmail } from '../../utils/helpers';
-import Footer from '../Footer';
+import React, { useState } from 'react';
 
-import sendButton from '../../assets/images/navImages/send.png'
+import { validateEmail } from '../../utils/helpers';
 
-function ContactForm(){
-    const [error, setError] = useState('')
-    const [formState, setFormState] = useState({name:'', email:'', message:''});
-    const {name, email, message} = formState;
+function ContactForm() {
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
-    const [charCount, setCharCount] = useState(0)
+    const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
 
-    function handleFormChanges(e){
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+            setFormState({ [e.target.name]: e.target.value });
+            console.log('Form', formState);
+        }
+    };
 
-        if(e.target.name === 'email'){
-            const isValid = validEmail(e.target.value)
-            if(!isValid){
-                setError('A valid email is required!')
+    const handleChange = (e) => {
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
             } else {
-                setError('')
+                setErrorMessage('');
             }
         } else {
-            if(!e.target.value.length){
-                setError(`Your ${e.target.name} is required!`)
+            if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
             } else {
-                setError('')
+                setErrorMessage('');
             }
         }
-        if(!error){
-            setFormState({...formState, [e.target.name]: e.target.value})
-        }
-    }
+    };
 
-    function handleFormSubmit(e){
-        e.preventDefault();
-        console.log(formState)
-        setCharCount(0)
-        setFormState({name:'', email:'', message:''})
-    }
-
-    function characterCount(e){
-        if(e.target.name === 'message'){
-            setCharCount(e.target.value.length)
-        }
-    }
-    return(
-        <>
-        <section className='my-5'>
-            <div className='container h-100 text-center'>
-                <div className='row h-100 justify-content-center align-items-center'>
-                    <div className='col-10 col-md-8 col-lg-6'>
-
-            <div className='p-2'>
-            <h1 id='about'>let's connect</h1>
-            <p>lacey.griffith04@gmail.com <br/> 512.569.6826</p>
-            </div>
-            {error && (
-                <div className='form-group row justify-content-center'>
-                    <div className='col-sm-10'>
-                    <p className='error'>{error}</p>
+    return (
+        <section id="contact">
+            <h1 data-testid="h1tag">Contact me</h1>
+            <form id="contact-form" onSubmit={handleSubmit}>
+                <div>
+                    <center>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} /><br></br>
+                <label htmlFor="email">Email:</label>
+                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} /><br></br>
+                    <label htmlFor="message">Msg:</label>
+                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} /><br></br>
+                    </center>
+                </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
                     </div>
-                </div>
-            )}
-            <form id='contact-form' onSubmit={handleFormSubmit}>
-            <div className="form-group row">
-                <div className="col-sm-10">
-                <label htmlFor='name' className='d-none'>Name</label>
-                <input type='text' className='form-control' placeholder='Name' defaultValue={name} name='name' size='100' onMouseLeave={handleFormChanges}></input>
-                </div>
-            </div>
-
-            <div className="form-group row">
-                <div className="col-sm-10">
-                <label htmlFor='email' className='d-none'>Email</label>
-                <input type='text' className="form-control" placeholder='Email' defaultValue={email} name='email' onMouseLeave={handleFormChanges}/>
-                </div>
-            </div>
-
-            <div className='form-group row'>
-                <div className='col-sm-10'>
-                <label htmlFor='message' className='d-none'>Message</label>
-                <textarea name='message' className='form-control' rows='5' defaultValue={message} placeholder='Message' onMouseLeave={handleFormChanges} onChange={characterCount}/>
-                <p className={`fw-light fs-6 ${charCount >= 280 ? 'error' : ''}`}>Characters left: {280 - charCount}</p>
-                </div>
-            </div>
-            <div className="form-group row">
-                <div className="col-sm-10">
-                <button type="submit" className="btn"><img src={sendButton} alt='send button' className='sendButton'/></button>
-                </div>
-            </div>
+                )}
+                <center><button data-testid="button" type="submit">Send</button></center>
             </form>
-            
-                    </div>
-                </div>
-            </div>
         </section>
-        <Footer/>
-        </>
-    )
+    );
 }
 
 export default ContactForm;
