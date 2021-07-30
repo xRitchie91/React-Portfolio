@@ -19,9 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 [React Portfolio](https://stark-wave-36157.herokuapp.com/)
 
 ## Screenshots
-- ![screenshot 1](https://user-images.githubusercontent.com/74946954/127598730-b559eaac-e310-42f1-b3ab-a332d297b783.png)
-- ![screenshot 2](https://user-images.githubusercontent.com/74946954/127598634-8ebf2c28-7001-4461-a5f7-232733bbaa0c.png)
-- ![screenshot 3](https://user-images.githubusercontent.com/74946954/127598579-79362449-dcf4-4488-b121-a01147b76011.png)
+![screenshot 1](https://user-images.githubusercontent.com/74946954/127615374-7a2f4f28-2bb4-44f5-9250-853dedb4b11a.png)
+![screenshot 2](https://user-images.githubusercontent.com/74946954/127615377-36007f1e-11a2-4adb-8018-53cbfe9d4c32.png)
 
 ## Contributors
 - [Ritchie Ortiz](https://www.github.com/xRitchie91)
