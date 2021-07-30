@@ -35,15 +35,17 @@ function ContactForm() {
 
     return (
         <section id="contact">
-            <h1 data-testid="h1tag">Contact me</h1>
+            <center>
+            <h1 data-testid="h1tag">Let's Get In Touch!</h1>
+            </center>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <center>
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Name: </label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} /><br></br>
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email">Email:  </label>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} /><br></br>
-                    <label htmlFor="message">Msg:</label>
+                    <label htmlFor="message">Message: </label>
                     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} /><br></br>
                     </center>
                 </div>
@@ -53,7 +55,7 @@ function ContactForm() {
                     </div>
                 )}
                 <center><button data-testid="button" type="submit">Send</button></center>
-            </form>
+            </form><br></br>
         </section>
     );
 }
