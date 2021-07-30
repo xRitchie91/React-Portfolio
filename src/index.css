@@ -5,8 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: cornflowerblue;
+  background-color: #201E35;
   color: ghostwhite;
+  background-image: url("./assets/small/front-end/wolfsunset.jpg");
+  background-position: top;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  font-weight: bold;
 }
 
 code {

@@ -21,6 +21,8 @@ function About() {
                     Watching sports, listening to music, spending time with friends and family, <br></br>
                     learning about different historical topics, and playing video games <br></br>
                     <br></br>
+                    <br></br>
+                    <br></br>
                 </p>
                 </center>
             </section>

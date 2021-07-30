@@ -34,7 +34,7 @@ function ContactForm() {
     };
 
     return (
-        <section id="contact">
+        <section id="contact"><br></br><br></br>
             <center>
             <h1 data-testid="h1tag">Let's Get In Touch!</h1>
             </center>
