@@ -1,6 +1,6 @@
 # React-Portfolio
 ## Summary
-20. React Portfolio
+This application is a meant to display my personal Portfolio of applications displayed using the React framework.
 
 # Table of Contents
 - [Usage](#Usage)
