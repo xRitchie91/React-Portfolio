@@ -16,7 +16,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Deployment
-[React Portfolio](https://stark-wave-36157.herokuapp.com/)
+[React Portfolio](https://rpo-portfolio.herokuapp.com/)
 
 ## Screenshots
 ![screenshot 1](https://user-images.githubusercontent.com/74946954/127615374-7a2f4f28-2bb4-44f5-9250-853dedb4b11a.png)
