@@ -19,8 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 [React Portfolio](https://rpo-portfolio.herokuapp.com/)
 
 ## Screenshots
-![screenshot 1](https://user-images.githubusercontent.com/74946954/127615374-7a2f4f28-2bb4-44f5-9250-853dedb4b11a.png)
-![screenshot 2](https://user-images.githubusercontent.com/74946954/127615377-36007f1e-11a2-4adb-8018-53cbfe9d4c32.png)
+![portfolio 1](https://user-images.githubusercontent.com/74946954/146139089-061ee60c-dd76-4733-91cd-bac8b4388c74.png)
+![portfolio 2](https://user-images.githubusercontent.com/74946954/127615377-36007f1e-11a2-4adb-8018-53cbfe9d4c32.png)
 
 ## Contributors
 - [Ritchie Ortiz](https://www.github.com/xRitchie91)
