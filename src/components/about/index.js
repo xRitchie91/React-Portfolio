@@ -1,14 +1,15 @@
 import React from 'react';
-import coverImage from "../../assets/about/portfolio1.jpg";
+import coverImage from "../../assets/about/rpo.icon.png";
 
 
 function About() {
     return (
             <section className="my-5">
-                <center>
-                <h1 id="about">Who Am I?</h1>
+                <center><h1 id="about">Nice to Meet You!</h1></center>
+                <align left>
                 <img src={coverImage} className="my2" style={{ width: "25%" }} alt="cover" />
-                <p>
+                </align>
+                <center><p>
                     Allow me to introduce myself..<br></br>
                     My Name is Richard Ortiz, but you may call me Ritchie.<br></br>
                     <br></br>
@@ -23,8 +24,7 @@ function About() {
                     <br></br>
                     <br></br>
                     <br></br>
-                </p>
-                </center>
+                </p></center>
             </section>
     );
 }
