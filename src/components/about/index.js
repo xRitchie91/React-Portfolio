@@ -5,11 +5,11 @@ import coverImage from "../../assets/about/rpo.icon.png";
 function About() {
     return (
             <section className="my-5">
-                <center><h1 id="about">Nice to Meet You!</h1></center>
-                <align left>
+                <center><h1 id="about">Nice to Meet You!</h1>
                 <img src={coverImage} className="my2" style={{ width: "25%" }} alt="cover" />
-                </align>
-                <center><p>
+            
+
+              <p>
                     Allow me to introduce myself..<br></br>
                     My Name is Richard Ortiz, but you may call me Ritchie.<br></br>
                     <br></br>
@@ -20,7 +20,8 @@ function About() {
 
                     In my free time I enjoy:<br></br>
                     Watching sports, listening to music, spending time with friends and family, <br></br>
-                    learning about different historical topics, and playing video games <br></br>
+                    learning about different historical topics, learning new technologies, frameworks, <br></br>
+                    and coding languages and playing video games <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
